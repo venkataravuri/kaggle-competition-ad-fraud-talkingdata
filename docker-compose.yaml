@@ -1,0 +1,10 @@
+version: '3'
+services:
+  kaggle:
+    image: kaggle/python
+    ports:
+      - "8888:8888"
+    volumes:
+      - c:/projects/ad-fraud-talkingdata:/tmp/working
+    tty: true
+    working_dir: /tmp/working
